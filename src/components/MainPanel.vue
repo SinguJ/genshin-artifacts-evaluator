@@ -4,7 +4,7 @@
       <n-layout class="main-panel-layout">
         <n-layout-header class="header">
             <n-card size="small">
-                标题栏
+                <AppHeader />
             </n-card>
         </n-layout-header>
         <n-layout-content class="content">
@@ -23,8 +23,13 @@
 </template>
 
 <script>
+import AppHeader from "@/components/AppHeader.vue"
+
 export default {
     name: "MainPanel",
+    components: {
+        AppHeader,
+    }
 }
 </script>
 
