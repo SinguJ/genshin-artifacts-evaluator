@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
-    <h1>{{ $t('app.title') }}</h1>
+    <n-gradient-text type="info">
+      <h1>{{ $t('app.title') }}</h1>
+    </n-gradient-text>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
