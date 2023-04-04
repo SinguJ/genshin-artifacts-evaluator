@@ -1,13 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <n-config-provider
+    :locale="locale"
+    :date-locale="dateLocale"
+  >
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  </n-config-provider>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import { storeToRefs } from 'pinia'
+import { useAppStore } from '@/stores/app'
 
 export default {
   name: 'App',
+  setup () {
+      const appStore = useAppStore()
+      const { locale, dateLocale } = storeToRefs(appStore)
+
+      return {
+          locale,
+          dateLocale
+      }
+  },
   components: {
     HelloWorld
   }

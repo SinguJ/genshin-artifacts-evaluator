@@ -3,6 +3,13 @@
     <n-gradient-text type="info">
       <h1>{{ $t('app.title') }}</h1>
     </n-gradient-text>
+    <n-grid x-gap="12" :cols="5">
+        <n-gi :offset="2">
+            <div style="margin: auto">
+                <LanguageSelector />
+            </div>
+        </n-gi>
+    </n-grid>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -33,8 +40,11 @@
 </template>
 
 <script>
+import LanguageSelector from "@/components/lang/LanguageSelector.vue";
+
 export default {
   name: 'HelloWorld',
+    components: {LanguageSelector},
   props: {
     msg: String
   }
