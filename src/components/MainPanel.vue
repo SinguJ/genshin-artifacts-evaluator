@@ -9,7 +9,7 @@
         </n-layout-header>
         <n-layout-content class="content">
             <n-card size="huge">
-                表单区域
+                <ArtifactsForm :changed="changedArtifacts"/>
             </n-card>
         </n-layout-content>
         <n-layout-footer class="footer">
@@ -24,11 +24,18 @@
 
 <script>
 import AppHeader from "@/components/AppHeader.vue"
+import ArtifactsForm from "@/components/ArtifactsForm.vue"
 
 export default {
     name: "MainPanel",
+    methods: {
+        changedArtifacts (formValue) {
+          console.log(formValue)
+        }
+    },
     components: {
         AppHeader,
+        ArtifactsForm,
     }
 }
 </script>

@@ -22,3 +22,7 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### References
+
+Genshin icon from: [genshin-icons](https://github.com/Sacr3d/genshin-icons)
