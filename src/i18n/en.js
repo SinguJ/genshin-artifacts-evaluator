@@ -1,6 +1,9 @@
 export default {
     app: {
         title: 'Genshin Artifacts Evaluator',
+        url: {
+            charactersDetails: 'https://genshin-impact.fandom.com/wiki/$$key$$'
+        },
         form: {
             position: 'Artifact Position',
             mainStat: 'Main Stat',
@@ -13,7 +16,13 @@ export default {
             subStat3Placeholder: 'Please select third subject stat',
             subStat4: 'Fourth Subject Stat',
             subStat4Placeholder: 'Please select fourth subject stat',
+        },
+        charactersViewer: {
+            empty: 'No suitable Character',
         }
+    },
+    characters: {
+        albedo: 'Albedo',
     },
     artifacts: {
         positions: {

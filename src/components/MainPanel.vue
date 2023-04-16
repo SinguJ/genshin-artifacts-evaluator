@@ -14,7 +14,7 @@
         </n-layout-content>
         <n-layout-footer class="footer">
             <n-card size="huge">
-                角色展示区
+                <CharactersViewer :characters="characters" />
             </n-card>
         </n-layout-footer>
       </n-layout>
@@ -25,15 +25,28 @@
 <script>
 import AppHeader from "@/components/AppHeader.vue"
 import ArtifactsForm from "@/components/ArtifactsForm.vue"
+import Characters from '@/stores/characters'
+import CharactersViewer from "@/components/CharactersViewer.vue";
 
 export default {
     name: "MainPanel",
+    data () {
+        return {
+            characters: [
+                {
+                    character: Characters.Albedo,
+                    score: 100
+                },
+            ]
+        }
+    },
     methods: {
         changedArtifacts (formValue) {
           console.log(formValue)
         }
     },
     components: {
+        CharactersViewer,
         AppHeader,
         ArtifactsForm,
     }
@@ -43,11 +56,16 @@ export default {
 <style scoped>
 .main-panel {
     padding: 0 50px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .main-panel-layout .header {
     margin-bottom: 30px;
 }
 .main-panel-layout .content {
     margin: 30px 0;
+}
+.main-panel-layout .footer {
+    margin-bottom: 30px;
 }
 </style>

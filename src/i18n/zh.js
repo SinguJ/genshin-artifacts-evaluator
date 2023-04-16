@@ -1,6 +1,9 @@
 export default {
     app: {
         title: '原神圣遗物评估器',
+        url: {
+            charactersDetails: 'https://bbs.mihoyo.com/ys/obc/content/$$id$$/detail?bbs_presentation_style=no_header'
+        },
         form: {
             position: '圣遗物位置',
             mainStat: '主词条',
@@ -13,7 +16,13 @@ export default {
             subStat3Placeholder: '请选择第三副词条',
             subStat4: '第四副词条',
             subStat4Placeholder: '请选择第四副词条',
+        },
+        charactersViewer: {
+            empty: '没有适合的角色',
         }
+    },
+    characters: {
+        albedo: '阿贝多',
     },
     artifacts: {
         positions: {
