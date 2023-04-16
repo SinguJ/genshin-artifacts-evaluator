@@ -255,3 +255,29 @@ export const SubStats = [
         value: 'healingBonusPercentage',
     },
 ]
+
+export const weights = (function () {
+    // weight => [
+    //     hp, hpPercentage, atk, atkPercentage, def, defPercentage,
+    //     critRatePercentage, critDmgPercentage, elementalMastery, energyRechargePercentage,
+    //     amenoElementalDmgBonusPercentage, cryoElementalDmgBonusPercentage, dendroElementalDmgBonusPercentage,
+    //     electroElementalDmgBonusPercentage, geoElementalDmgBonusPercentage, hydroElementalDmgBonusPercentage,
+    //     pyroElementalDmgBonusPercentage, physicalDmgBonusPercentage, healingBonusPercentage
+    // ]
+    // weight => [
+    //     生命值, 生命值百分比, 攻击力, 攻击力百分比, 防御, 防御百分比,
+    //     暴击率, 暴击伤害, 元素精通, 元素充能效率,
+    //     风元素伤害加成, 冰元素伤害加成, 草元素伤害加成,
+    //     雷元素伤害加成, 岩元素伤害加成, 水元素伤害加成,
+    //     火元素伤害加成, 物理伤害加成, 治疗加成
+    // ]
+    return {
+        Albedo: [
+            0, 0, 0, 0, 100.0, 100.0,
+            100.0, 100.0, 0, 0,
+            0, 0, 0,
+            0, 100.0, 0,
+            0, 0, 0,
+        ]
+    }
+})()

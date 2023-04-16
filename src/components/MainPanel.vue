@@ -25,24 +25,21 @@
 <script>
 import AppHeader from "@/components/AppHeader.vue"
 import ArtifactsForm from "@/components/ArtifactsForm.vue"
-import Characters from '@/stores/characters'
 import CharactersViewer from "@/components/CharactersViewer.vue";
+import {getSuitableCharacters} from "@/common/algorithms";
 
 export default {
     name: "MainPanel",
     data () {
         return {
-            characters: [
-                {
-                    character: Characters.Albedo,
-                    score: 100
-                },
-            ]
+            characters: []
         }
     },
     methods: {
         changedArtifacts (formValue) {
-          console.log(formValue)
+            let _characters = getSuitableCharacters(formValue)
+            console.log(_characters)
+            this.characters.splice(0, this.characters.length, ..._characters.filter((obj) => obj.score > 60))
         }
     },
     components: {
