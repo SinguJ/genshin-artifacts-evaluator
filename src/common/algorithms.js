@@ -4,7 +4,7 @@ import Characters from "@/stores/characters";
 const weightIndexes = [
     'hp', 'hpPercentage', 'atk', 'atkPercentage', 'def', 'defPercentage',
     'critRatePercentage', 'critDmgPercentage', 'elementalMastery', 'energyRechargePercentage',
-    'amenoElementalDmgBonusPercentage', 'cryoElementalDmgBonusPercentage', 'dendroElementalDmgBonusPercentage',
+    'anemoElementalDmgBonusPercentage', 'cryoElementalDmgBonusPercentage', 'dendroElementalDmgBonusPercentage',
     'electroElementalDmgBonusPercentage', 'geoElementalDmgBonusPercentage', 'hydroElementalDmgBonusPercentage',
     'pyroElementalDmgBonusPercentage', 'physicalDmgBonusPercentage', 'healingBonusPercentage'
 ]

@@ -8,7 +8,7 @@
 
 <script>
 import { ELEMENTS } from "@/common/enum";
-import Ameno from '@/assets/icons/elements/ameno.svg'
+import Anemo from '@/assets/icons/elements/anemo.svg'
 import Cryo from '@/assets/icons/elements/cryo.svg'
 import Dendro from '@/assets/icons/elements/dendro.svg'
 import Electro from '@/assets/icons/elements/electro.svg'
@@ -27,7 +27,7 @@ export default {
     data () {
         return {
             elements: {
-                [ELEMENTS.Ameno]: Ameno,
+                [ELEMENTS.Anemo]: Anemo,
                 [ELEMENTS.Cryo]: Cryo,
                 [ELEMENTS.Dendro]: Dendro,
                 [ELEMENTS.Electro]: Electro,

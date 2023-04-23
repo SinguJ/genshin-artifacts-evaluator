@@ -107,7 +107,7 @@ export default {
             elementalMastery: '元素精通',
             energyRechargePercentage: '元素充能效率',
             elementalDmgBonusPercentage: '元素伤害加成',
-            amenoElementalDmgBonusPercentage: '风元素伤害加成',
+            anemoElementalDmgBonusPercentage: '风元素伤害加成',
             cryoElementalDmgBonusPercentage: '冰元素伤害加成',
             dendroElementalDmgBonusPercentage: '草元素伤害加成',
             electroElementalDmgBonusPercentage: '雷元素伤害加成',

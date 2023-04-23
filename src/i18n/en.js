@@ -107,7 +107,7 @@ export default {
             elementalMastery: 'Elemental Mastery',
             energyRechargePercentage: 'Energy Recharge (%)',
             elementalDmgBonusPercentage: 'Elemental DMG Bonus (%)',
-            amenoElementalDmgBonusPercentage: 'Ameno Elemental DMG Bonus (%)',
+            anemoElementalDmgBonusPercentage: 'Anemo Elemental DMG Bonus (%)',
             cryoElementalDmgBonusPercentage: 'Cryo Elemental DMG Bonus (%)',
             dendroElementalDmgBonusPercentage: 'Dendro Elemental DMG Bonus (%)',
             electroElementalDmgBonusPercentage: 'Electro Elemental DMG Bonus (%)',

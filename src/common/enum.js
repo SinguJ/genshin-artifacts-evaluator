@@ -5,7 +5,7 @@ export const LANG_VALUES = {
 }
 
 export const ELEMENTS = {
-    Ameno: 'ameno',
+    Anemo: 'anemo',
     Geo: 'geo',
     Electro: 'electro',
     Dendro: 'dendro',

@@ -73,9 +73,9 @@ export const MainStats = [
     },
     {
         label: (options) => i18n.global.t(options.labelKey),
-        labelKey: 'artifacts.stats.amenoElementalDmgBonusPercentage',
+        labelKey: 'artifacts.stats.anemoElementalDmgBonusPercentage',
         icon: '',
-        value: 'amenoElementalDmgBonusPercentage',
+        value: 'anemoElementalDmgBonusPercentage',
     },
     {
         label: (options) => i18n.global.t(options.labelKey),
@@ -190,9 +190,9 @@ export const SubStats = [
     },
     {
         label: (options) => i18n.global.t(options.labelKey),
-        labelKey: 'artifacts.stats.amenoElementalDmgBonusPercentage',
+        labelKey: 'artifacts.stats.anemoElementalDmgBonusPercentage',
         icon: '',
-        value: 'amenoElementalDmgBonusPercentage',
+        value: 'anemoElementalDmgBonusPercentage',
     },
     {
         label: (options) => i18n.global.t(options.labelKey),
@@ -260,7 +260,7 @@ export const weights = (function () {
     // weight => [
     //     hp, hpPercentage, atk, atkPercentage, def, defPercentage,
     //     critRatePercentage, critDmgPercentage, elementalMastery, energyRechargePercentage,
-    //     amenoElementalDmgBonusPercentage, cryoElementalDmgBonusPercentage, dendroElementalDmgBonusPercentage,
+    //     anemoElementalDmgBonusPercentage, cryoElementalDmgBonusPercentage, dendroElementalDmgBonusPercentage,
     //     electroElementalDmgBonusPercentage, geoElementalDmgBonusPercentage, hydroElementalDmgBonusPercentage,
     //     pyroElementalDmgBonusPercentage, physicalDmgBonusPercentage, healingBonusPercentage
     // ]
