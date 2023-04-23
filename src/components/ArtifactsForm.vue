@@ -70,6 +70,7 @@
 <script>
 import { defineComponent, ref } from "vue"
 import { Positions, MainStats, SubStats } from "@/stores/data";
+import i18n from "@/i18n";
 
 const formRef = ref(null);
 
@@ -83,6 +84,7 @@ export default defineComponent({
                 mainStats: MainStats,
                 subStats: SubStats,
                 lastSubStats: [{
+                    label: (options) => i18n.global.t(options.labelKey),
                     labelKey: 'artifacts.stats.none',
                     icon: '',
                     value: null,
