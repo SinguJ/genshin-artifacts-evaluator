@@ -3,7 +3,9 @@
     round
     size="small"
     :src="elements[element]"
+    v-if="element !== 'any'"
   />
+  <i v-if="element === 'any'"></i>
 </template>
 
 <script>
